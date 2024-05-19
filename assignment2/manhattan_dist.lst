@@ -1,0 +1,9 @@
+  ADDR  |  HEX  |      BINARY      |  LN  |  ASSEMBLY
+        |       |                  |    1 | .ORIG x3000
+ x3000  | xF025 | 1111000000100101 |    2 | HALT
+        |       |                  |    3 | ; Note: Please do not change the names of the constants below
+ x3001  | x0007 | 0000000000000111 |    4 | G_X .FILL #7
+ x3002  | xFFF8 | 1111111111111000 |    5 | G_Y .FILL #-8
+ x3003  | x0005 | 0000000000000101 |    6 | G_Z .FILL #5
+ x3004  | x000A | 0000000000001010 |    7 | GOAL_DIST .FILL #10
+        |       |                  |    8 | .END
